@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Economics Quiz Game</h1>
+        <p>Test your knowledge of economic terms!</p>
+        
+        <div id="start-screen">
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        
+        <div id="quiz-screen" style="display: none;">
+            <div id="question-container">
+                <p id="question-number" style="color: #667eea; font-weight: bold; margin-bottom: 10px;">Question 1 of 10</p>
+                <h2 id="question">Question will appear here</h2>
+                <div id="answer-buttons">
+                    <button class="answer-btn">Answer 1</button>
+                    <button class="answer-btn">Answer 2</button>
+                    <button class="answer-btn">Answer 3</button>
+                    <button class="answer-btn">Answer 4</button>
+                </div>
+            </div>
+            <p id="score">Score: 0/0</p>
+        </div>
+        
+        <div id="results-screen" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p id="final-score">Your score: 0/0</p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
